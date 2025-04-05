@@ -21,6 +21,15 @@ An AI-based web application that predicts natural disasters using weather data. 
 -  Ethereum blockchain integration:
   - Smart contracts for verified disaster logs
   - NFTs or tokens for verified alerts
+  - ## Model Information
+
+The system uses a Random Forest Classifier trained on environmental data to predict disaster likelihood. The model considers:
+
+- Rainfall (mm)
+- Temperature (°C)
+- Humidity (%)
+- Wind Speed (m/s)
+
 
 ---
 
