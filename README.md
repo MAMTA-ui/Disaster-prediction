@@ -2,6 +2,13 @@
 
 An AI-based web application that predicts natural disasters using weather data. It uses machine learning (Random Forest) for disaster classification and integrates a blockchain layer (Ethereum) for transparency and secure logging. Built with Python, Flask, HTML, and Web3 technologies.
 
+
+- Predict disaster likelihood based on rainfall, temperature, humidity, and wind speed
+- User authentication system for secure access
+- Interactive data visualization dashboard
+- Responsive and modern UI
+
+
 ---
 
 ## 🔍 Features
@@ -40,6 +47,4 @@ An AI-based web application that predicts natural disasters using weather data. 
 
 ---
 
-## 🚀 Installation
 
-```bash
