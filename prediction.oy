@@ -1,0 +1,23 @@
+import pickle
+import numpy as np
+
+# Load model and encoders
+with open('disaster_model.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+with open('type_encoder.pkl', 'rb') as f:
+    type_encoder = pickle.load(f)
+
+with open('severity_encoder.pkl', 'rb') as f:
+    severity_encoder = pickle.load(f)
+
+# Sample input (replace with form values)
+input_data = np.array([[100, 30, 80, 4]])  # rainfall, temp, humidity, wind
+
+# Predict
+prediction = model.predict(input_data)
+predicted_type = type_encoder.inverse_transform([prediction[0][0]])[0]
+predicted_severity = severity_encoder.inverse_transform([prediction[0][1]])[0]
+
+print("🌪️ Disaster Type:", predicted_type)
+print("🚨 Severity Level:", predicted_severity)
